@@ -8,8 +8,8 @@ import Phone2 from "../../assets/img/phone/2.png";
 import Phone3 from "../../assets/img/phone/3.png";
 import Phone4 from "../../assets/img/phone/4.png";
 import Phone5 from "../../assets/img/phone/5.png";
-import Phone6 from '../../assets/img/phone/9.png'
-import Phone7 from '../../assets/img/phone/10.png'
+import Phone6 from "../../assets/img/phone/9.png";
+import Phone7 from "../../assets/img/phone/10.png";
 
 const Popular = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -24,9 +24,9 @@ const Popular = () => {
           className={`flexCenter ${css.heading}`}
         >
           <div>
-            <span className="primaryText">
+            <h1 className="primaryText">
               Популярные товары, которые берут в рассрочку
-            </span>
+            </h1>
           </div>
         </motion.div>
 
@@ -34,7 +34,10 @@ const Popular = () => {
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
             <img width={200} src={Phone1} alt="project" />
             <figcaption>
-              <b>APPLE IPHONE 15 <br /> 256GB</b> <br />
+              <b>
+                APPLE IPHONE 15 <br /> 256GB
+              </b>{" "}
+              <br />
               <p className={css.price}>104 399 ₽</p>
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
@@ -53,7 +56,10 @@ const Popular = () => {
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
             <img width={200} src={Phone2} alt="project" />
             <figcaption>
-              <b>Apple iPhone 15 PRO <br /> MAX 256GB</b> <br />
+              <b>
+                Apple iPhone 15 PRO <br /> MAX 256GB
+              </b>{" "}
+              <br />
               <p className={css.price}>159 299 ₽</p>
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
@@ -77,7 +83,10 @@ const Popular = () => {
               alt="project"
             />
             <figcaption>
-              <b>Apple iPhone 13 <br /> 128GB</b> <br />
+              <b>
+                Apple iPhone 13 <br /> 128GB
+              </b>{" "}
+              <br />
               <p className={css.price}>71 999 ₽</p>
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
@@ -96,7 +105,10 @@ const Popular = () => {
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
             <img width={200} src={Phone4} alt="project" />
             <figcaption>
-              <b>Apple iPhone 14 <br /> Pro Max 256GB</b> <br />
+              <b>
+                Apple iPhone 14 <br /> Pro Max 256GB
+              </b>{" "}
+              <br />
               <p className={css.price}>146 699 ₽</p>
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
@@ -115,7 +127,10 @@ const Popular = () => {
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
             <img width={280} height={320} src={Phone6} alt="project" />
             <figcaption>
-              <b>SAMSUNG GALAXY <br /> S23 ULTRA 12/256</b> <br />
+              <b>
+                SAMSUNG GALAXY <br /> S23 ULTRA 12/256
+              </b>{" "}
+              <br />
               <p className={css.price}>90 990 ₽</p>
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
@@ -151,9 +166,12 @@ const Popular = () => {
           </motion.figure>
 
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
-            <img  width={240} height={320} src={Phone5} alt="project" />
+            <img width={240} height={320} src={Phone5} alt="project" />
             <figcaption>
-              <b>APPLE MACBOOK <br /> AIR 2022 M2 8/256</b> <br />
+              <b>
+                APPLE MACBOOK <br /> AIR 2022 M2 8/256
+              </b>{" "}
+              <br />
               <p className={css.price}>114 990 ₽ ₽</p>
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
@@ -172,7 +190,10 @@ const Popular = () => {
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
             <img width={240} height={320} src={Phone5} alt="project" />
             <figcaption>
-              <b>APPLE MACBOOK PRO <br /> 2022 M2 8/512</b> <br />
+              <b>
+                APPLE MACBOOK PRO <br /> 2022 M2 8/512
+              </b>{" "}
+              <br />
               <p className={css.price}>143 990 ₽</p>
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
@@ -195,4 +216,3 @@ const Popular = () => {
 };
 
 export default Popular;
-

@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import css from "./Available.module.scss";
@@ -13,7 +12,6 @@ import img6 from "../../assets/img/materials/6.png";
 import img7 from "../../assets/img/materials/7.png";
 import img8 from "../../assets/img/materials/8.png";
 
-
 const Popular = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
@@ -27,9 +25,9 @@ const Popular = () => {
           className={`flexCenter ${css.heading}`}
         >
           <div>
-            <span className="primaryText">
-            Товары, доступные для покупки в рассрочку
-            </span>
+            <h1 className="primaryText">
+              Товары, доступные для покупки в рассрочку
+            </h1>
           </div>
         </motion.div>
 
@@ -44,31 +42,35 @@ const Popular = () => {
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
             <img src={img2} alt="project" />
             <figcaption>
-              <b>Мебель и товары <br /> для дома</b> <br />
+              <b>
+                Мебель и товары <br /> для дома
+              </b>{" "}
+              <br />
             </figcaption>
           </motion.figure>
 
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
-            <img
-            
-              style={{ marginTop: "6px" }}
-              src={img3}
-              alt="project"
-            />
+            <img style={{ marginTop: "6px" }} src={img3} alt="project" />
             <figcaption>
-              <b>Напольные <br /> покрытия</b> <br />
+              <b>
+                Напольные <br /> покрытия
+              </b>{" "}
+              <br />
             </figcaption>
           </motion.figure>
 
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
             <img src={img4} alt="project" />
             <figcaption>
-              <b>Строительные <br /> материалы</b> <br />
+              <b>
+                Строительные <br /> материалы
+              </b>{" "}
+              <br />
             </figcaption>
           </motion.figure>
 
           <motion.figure variants={fadeIn("up", "tween", 0.5, 0.6)}>
-            <img  width={240} height={320} src={img5} alt="project" />
+            <img width={240} height={320} src={img5} alt="project" />
             <figcaption>
               <b>Обои</b> <br />
             </figcaption>

@@ -20,9 +20,9 @@ const Work = () => {
       <a className="anchor" id="work"></a>
 
       <div className={`innerWidth flexCenter ${css.container}`}>
-        <span className="primaryText yPaddings">
+        <h1 className="primaryText yPaddings">
           Почему более 70 000 клиентов выбрали нас
-        </span>
+        </h1>
 
         <div className={`flexCenter ${css.experiences}`}>
           {workExp.map((exp, i) => {

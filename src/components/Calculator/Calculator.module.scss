@@ -10,6 +10,13 @@
 .formContainer {
   display: flex;
   justify-content: space-between;
+  gap: 1rem;
+  width: fit-content;
+  margin: 0 auto;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+  }
 }
 
 .discountBody {
@@ -51,8 +58,8 @@
     .inputRange {
       width: 100%;
       height: 15px;
-      -webkit-appearance: none;
-      background: rgb(245,246,247);
+      appearance: none;
+      background: rgb(245, 246, 247);
       position: absolute;
       top: 3rem;
       overflow: hidden;
@@ -64,10 +71,10 @@
       width: 15px;
       height: 15px;
       border-radius: 50%;
-      background-color: #148F2B;
+      background-color: #148f2b;
       cursor: pointer;
       border: 4px solid #ffffff;
-      box-shadow: -407px 0 0 400px  #148F2B;
+      box-shadow: -407px 0 0 400px #148f2b;
     }
   }
 
@@ -116,6 +123,7 @@ input::-webkit-inner-spin-button {
   padding: 24px 80px;
   display: flex;
   flex-direction: column;
+  margin: 0 auto;
 
   > div {
     color: #0d2f3f;
@@ -126,7 +134,6 @@ input::-webkit-inner-spin-button {
 
     p {
       font-size: 1.8rem;
-      
     }
   }
 
@@ -138,7 +145,6 @@ input::-webkit-inner-spin-button {
 
     p {
       font-size: 1.1rem;
-      
     }
 
     span {

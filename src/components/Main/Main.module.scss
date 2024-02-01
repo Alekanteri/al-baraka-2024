@@ -134,7 +134,11 @@
       background-image: url("../../../public/splash.png");
       background-repeat: no-repeat;
       background-size: 14rem;
-      left: 43%;
+      right: 30%;
+
+      @media (max-width: 1200px) {
+        right: 1rem;
+      }
 
       img {
         @media (max-width: $sm) {
@@ -161,7 +165,7 @@
         );
       }
       cursor: pointer;
-      background: rgb(20,143,43);
+      background: rgb(20, 143, 43);
       margin: 10px;
       padding: 25px 45px;
       text-align: center;
