@@ -1,0 +1,212 @@
+@use "../../styles/contants.scss" as var;
+
+.calculator {
+  box-shadow: 0 1px 2px rgba(38, 38, 38, 0.062),
+    0 2px 4px rgba(38, 38, 38, 0.308);
+  padding: 3rem;
+  border-radius: 15px;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.discountBody {
+  h3 {
+    font-size: 1.9rem;
+    font-weight: 500;
+    font: 500 40px/42px SBSansDisplay, OpenSans, Helvetica Neue, Helvetica,
+      Arial, sans-serif;
+  }
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 0px;
+
+  .discountBtn {
+    background-color: #eeeeee;
+    width: fit-content;
+    cursor: pointer;
+    padding: 15px 23px;
+    border-radius: 1000px;
+    font-weight: 600;
+  }
+
+  .activeBtn {
+    background-color: rgb(38, 38, 38);
+    color: white;
+  }
+}
+
+.inputsContainer {
+  margin-top: 3rem;
+
+  .inventoryChanging {
+    position: relative;
+
+    .inputRange {
+      width: 100%;
+      height: 15px;
+      -webkit-appearance: none;
+      background: rgb(245,246,247);
+      position: absolute;
+      top: 3rem;
+      overflow: hidden;
+      border-radius: 3px;
+    }
+
+    .inputRange::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 15px;
+      height: 15px;
+      border-radius: 50%;
+      background-color: #148F2B;
+      cursor: pointer;
+      border: 4px solid #ffffff;
+      box-shadow: -407px 0 0 400px  #148F2B;
+    }
+  }
+
+  label {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffff;
+    border: 1px solid rgba(38, 38, 38, 0.24);
+    height: 52px;
+    padding: 10px;
+    border-radius: 5px;
+    p {
+      margin-left: -0.2rem;
+      font-size: 18px;
+      font-weight: 600;
+    }
+  }
+
+  input[type="number"] {
+    font-size: 20px;
+    font-weight: 600;
+    color: #0d2f3f;
+    outline: none;
+    border: none;
+  }
+
+  input[type="range"] {
+    outline: none;
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.calculatorResult {
+  width: fit-content;
+  text-align: center;
+  background-color: #f5f6f7;
+  border: 1px solid rgba(38, 38, 38, 0.08);
+  border-radius: 16px;
+  padding: 24px 80px;
+  display: flex;
+  flex-direction: column;
+
+  > div {
+    color: #0d2f3f;
+    font: 400 19px/28px SBSansText, OpenSans, Helvetica Neue, Helvetica, Arial,
+      sans-serif;
+    margin-bottom: 8px;
+    text-align: center;
+
+    p {
+      font-size: 1.8rem;
+      
+    }
+  }
+
+  .monthPayment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    p {
+      font-size: 1.1rem;
+      
+    }
+
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .firstPayment {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    p {
+      font-size: 1.1rem;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+
+  .markUp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+
+    p {
+      font-size: 1.1rem;
+    }
+    span {
+      font-weight: 600;
+    }
+  }
+
+  span {
+    font-size: 1.1rem;
+  }
+  .mainCallBtn {
+    width: fit-content;
+    cursor: pointer;
+    background: rgb(20, 143, 43);
+    margin: 10px;
+    padding: 18px 30px;
+    text-align: center;
+    outline: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    font-weight: 600;
+    border-radius: 10px;
+    display: block;
+    border: none;
+    margin: auto;
+    &:hover {
+      background-position: right center; /* change the direction of the change here */
+      color: #fff;
+      text-decoration: none;
+      scale: 1.05;
+    }
+    &:active {
+      background-image: linear-gradient(
+        to right,
+        #02b050c7 0%,
+        #2b8d78 71%,
+        #10c263 100%
+      );
+    }
+  }
+}

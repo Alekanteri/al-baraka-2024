@@ -1,0 +1,57 @@
+.investment {
+  background-color: #182b39;
+  color: white;
+  background-image: url("../../../public//inv06.png");
+  background-repeat: no-repeat;
+  background-size: 47rem;
+  background-position: right;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .left {
+      h1 {
+        font-size: 2.2rem;
+        font-weight: 600;
+        padding: 10px;
+        line-height: 159.5%;
+      }
+
+      p {
+        font-family: "Eudoxus Sans", sans-serif;
+        padding: 10px;
+        font-size: 18px;
+        font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+          sans-serif;
+        font-weight: 600;
+      }
+
+      a {
+        padding: 15px 90px;
+        margin-left: 10px;
+        background-color: #182b39;
+        border: 2px solid white;
+        font-size: 18px;
+        border-radius: 5px;
+        color: white;
+        transition: 0.3s;
+        text-decoration: none;
+        cursor: pointer;
+        &:hover {
+          background-color: rgba(245, 245, 245, 0.281);
+        }
+      }
+    }
+
+    .right {
+      .invImage {
+        filter: drop-shadow(10px 10px 70px rgb(34, 206, 11));
+        transition: 0.3s;
+
+        &:hover {
+          scale: 1 1.1;
+        }
+      }
+    }
+  }
+}

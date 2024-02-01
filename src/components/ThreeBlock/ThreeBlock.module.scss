@@ -1,0 +1,87 @@
+@use "../../styles/contants.scss" as var;
+.threeBlockContainer {
+  max-width: 1280px;
+  margin: 5rem auto;
+  display: grid;
+  place-items: center;
+  gap: 3rem;
+
+  h1 {
+    text-align: center;
+  }
+
+  .threeBlockItemsList {
+    width: 100%;
+    padding: 0px 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+
+
+    .ThreeBlockItem {
+      width: 100%;
+      padding: 1rem;
+      padding: 50px 30px;
+      border-radius: 1rem;
+      background: var.$main-block-bg-color;
+      position: relative;
+      color: white;
+      @media (max-width: var.$md) {
+        margin: 0 auto;
+        width: 100%;
+        
+      }
+
+      .threeBlockItemTitle {
+        font-size: 23px;
+        font-weight: bold;
+      }
+
+      .threeBlockItemDescription {
+        font-size: 18px;
+        margin: 1rem 0;
+      }
+
+      .mainCallBtn {
+        
+        top: 50%;
+        left: 0;
+        &:active {
+          background-image: linear-gradient(
+            to right,
+            #02b050c7 0%,
+            #2b8d78 71%,
+            #10c263 100%
+          );
+        }
+        cursor: pointer;
+        background: rgb(20,143,43);
+        padding: 20px 35px;
+        outline: none;
+        text-transform: uppercase;
+        transition: 0.5s;
+        background-size: 200% auto;
+        color: white;
+        font-weight: 600;
+        border-radius: 10px;
+        display: block;
+        
+        border: none;
+        &:hover {
+          background-position: right center; /* change the direction of the change here */
+          color: #fff;
+          text-decoration: none;
+          scale: 1.05;
+        }
+      }
+
+      img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+}
