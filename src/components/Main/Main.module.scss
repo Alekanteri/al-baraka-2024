@@ -81,7 +81,7 @@
 
     .lowerElements {
       @media (max-width: $sm), (max-width: $md) {
-        margin-top: 4rem;
+        margin-top: 8rem;
         gap: 2rem;
         justify-content: center;
       }
@@ -118,6 +118,11 @@
           font-size: 14px;
           flex-direction: row;
           left: auto;
+          bottom: 5rem;
+        }
+
+        @media (max-width: 768px) {
+          bottom: 8rem;
         }
       }
     }

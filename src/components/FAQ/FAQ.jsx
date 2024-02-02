@@ -32,7 +32,7 @@ const FAQ = () => {
                 заключения договоров - наше принципиальное отличие
               </p>
             </details>
-            <img width={110} src={img2} alt="" />
+            <img src={img2} alt="" />
           </div>
           <div className={styles.detailsContact}>
             <details>
@@ -42,7 +42,7 @@ const FAQ = () => {
                 и без.
               </p>
             </details>
-            <img width={110} src={img3} alt="" />
+            <img src={img3} alt="" />
           </div>
           <div className={styles.detailsContact}>
             <details>
@@ -52,7 +52,7 @@ const FAQ = () => {
                 достаточно иметь только паспорт.
               </p>
             </details>
-            <img width={110} src={img4} alt="" />
+            <img src={img4} alt="" />
           </div>
         </div>
       </div>
