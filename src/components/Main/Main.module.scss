@@ -102,14 +102,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 12px;
+        text-align: center;
 
-        img {
+        svg {
           margin-bottom: 1rem;
           width: 3.5rem;
+          @media (max-width: 1024px) {
+            display: none;
+          }
         }
 
-        @media (max-width: 1005px) {
-          display: none;
+        @media (max-width: 1024px) {
+          position: absolute;
+          font-size: 14px;
+          flex-direction: row;
+          left: auto;
         }
       }
     }
@@ -136,7 +144,7 @@
       background-size: 14rem;
       right: 30%;
 
-      @media (max-width: 1200px) {
+      @media (max-width: 1024px) {
         right: 1rem;
       }
 
@@ -149,10 +157,15 @@
     }
 
     .mainCallBtn {
-      @media (max-width: 925px) {
+      @media (max-width: 1024px) {
         position: relative;
-        display: none;
+        top: 100%;
       }
+
+      @media (max-width: 768px) {
+        margin: 5rem auto;
+      }
+
       position: absolute;
       top: 50%;
       left: 0;
