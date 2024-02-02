@@ -182,7 +182,7 @@ const Calculator = () => {
                 <div className={css.calculatorResult}>
                   <div>
                     Общая стоимость
-                    <p style={{fontWeight: 600}}>{result}</p>
+                    <p style={{ fontWeight: 600 }}>{result}</p>
                   </div>
                   <div
                     style={{
@@ -200,8 +200,8 @@ const Calculator = () => {
                     <span>{firstPayment}</span>
                   </div>
                   <div className={css.markUp}>
-                  <p>Торговая наценка:</p>
-                  <span>{markUp}</span> 
+                    <p>Торговая наценка:</p>
+                    <span>{markUp}</span>
                   </div>
                   <button className={css.mainCallBtn}>Подать зявку</button>
                 </div>

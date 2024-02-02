@@ -18,18 +18,20 @@
     }
 
     .showContainer {
-
+      width: 100%;
       display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+      place-items: center;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
 
       figure {
-        background-color: #F8F7F1;
+        background-color: #f8f7f1;
         width: 330px;
         height: 520px;
         margin: 10px;
         border-radius: 50px;
         padding: 10px 30px;
-        box-shadow: 0 1px 2px rgba(38, 38, 38, 0.062), 0 2px 4px rgba(38, 38, 38, 0.308);
+        box-shadow: 0 1px 2px rgba(38, 38, 38, 0.062),
+          0 2px 4px rgba(38, 38, 38, 0.308);
         transition: 0.3s;
         &:hover {
           box-shadow: 0 4px 30px rgba(8, 182, 88, 0.37);
@@ -42,7 +44,6 @@
           margin-top: 10px;
           b {
             font-size: 22px;
-    
           }
 
           .price {
@@ -61,7 +62,7 @@
             );
           }
           cursor: pointer;
-          background: rgb(20,143,43);
+          background: rgb(20, 143, 43);
           font-weight: 600;
           margin: 10px;
           padding: 20px 45px;
@@ -85,18 +86,9 @@
         }
       }
 
-      @media (max-width: 990px) {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      @media (max-width: 700px) {
-        grid-template-columns: 1fr;
-      }
-
       img {
         display: flex;
         margin: auto;
-
       }
     }
   }

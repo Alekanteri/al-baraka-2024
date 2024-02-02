@@ -7,7 +7,7 @@ import { footerVariants, staggerChildren } from "../../utils/motion";
 
 const Partners = () => {
   return (
-    <div style={{background: 'white'}}>
+    <div style={{ background: "white" }}>
       <motion.section
         variants={staggerChildren}
         initial="hidden"
@@ -23,7 +23,7 @@ const Partners = () => {
           className={`yPaddings innerWidth ${css.container}`}
         >
           <div className={`flexCenter ${css.heading}`}>
-            <span className="primaryText">Наши партнеры</span>
+            <h1 className="primaryText">Наши партнеры</h1>
           </div>
 
           <div className={`yPaddings ${css.comments}`}>

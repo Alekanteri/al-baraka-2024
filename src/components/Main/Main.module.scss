@@ -102,14 +102,22 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        font-size: 12px;
+        text-align: center;
 
-        img {
+        svg {
           margin-bottom: 1rem;
           width: 3.5rem;
+          @media (max-width: 1024px) {
+            display: none;
+          }
         }
 
-        @media (max-width: 1005px) {
-          display: none;
+        @media (max-width: 1024px) {
+          position: absolute;
+          font-size: 14px;
+          flex-direction: row;
+          left: auto;
         }
       }
     }
@@ -134,7 +142,11 @@
       background-image: url("../../../public/splash.png");
       background-repeat: no-repeat;
       background-size: 14rem;
-      left: 43%;
+      right: 30%;
+
+      @media (max-width: 1024px) {
+        right: 1rem;
+      }
 
       img {
         @media (max-width: $sm) {
@@ -145,10 +157,15 @@
     }
 
     .mainCallBtn {
-      @media (max-width: 925px) {
+      @media (max-width: 1024px) {
         position: relative;
-        display: none;
+        top: 100%;
       }
+
+      @media (max-width: 768px) {
+        margin: 5rem auto;
+      }
+
       position: absolute;
       top: 50%;
       left: 0;
@@ -161,7 +178,7 @@
         );
       }
       cursor: pointer;
-      background: rgb(20,143,43);
+      background: rgb(20, 143, 43);
       margin: 10px;
       padding: 25px 45px;
       text-align: center;
