@@ -5,6 +5,10 @@
     0 2px 4px rgba(38, 38, 38, 0.308);
   padding: 3rem;
   border-radius: 15px;
+
+  @media (max-width: 500px) {
+    padding: 0.5rem;
+  }
 }
 
 .formContainer {
@@ -25,6 +29,11 @@
     font-weight: 500;
     font: 500 40px/42px SBSansDisplay, OpenSans, Helvetica Neue, Helvetica,
       Arial, sans-serif;
+
+    @media (max-width: 500px) {
+      font-size: 1.2rem;
+      margin-top: 1.5rem;
+    }
   }
 }
 
@@ -54,6 +63,10 @@
 
   .inventoryChanging {
     position: relative;
+    @media (max-width: 500px) {
+      width: 80%;
+      margin: 0 auto;
+    }
 
     .inputRange {
       width: 100%;
@@ -125,6 +138,11 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   margin: 0 auto;
 
+  @media (max-width: 500px) {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
   > div {
     color: #0d2f3f;
     font: 400 19px/28px SBSansText, OpenSans, Helvetica Neue, Helvetica, Arial,
@@ -134,6 +152,9 @@ input::-webkit-inner-spin-button {
 
     p {
       font-size: 1.8rem;
+      @media (max-width: 500px) {
+        font-size: 1.2rem;
+      }
     }
   }
 

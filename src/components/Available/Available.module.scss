@@ -22,11 +22,11 @@
       display: grid;
       place-items: center;
       grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 1rem;
 
       figure {
-        width: 330px;
+        max-width: 330px;
         height: 380px;
-        margin: 10px;
         background: #f8f7f1;
         border-radius: 50px;
         padding: 10px 30px;
