@@ -14,6 +14,11 @@ import Phone7 from "../../assets/img/phone/10.png";
 const Popular = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
+  const handleOpenModal = () => {
+    setIsOpen(true);
+    document.body.style.overflowY = "hidden";
+  };
+
   return (
     <section className={`paddings ${css.wrapper}`}>
       <a className="anchor" id="portfolio"></a>
@@ -42,9 +47,7 @@ const Popular = () => {
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
                 className={css.mainCallBtn}
-                onClick={() => {
-                  setIsOpen(true);
-                }}
+                onClick={handleOpenModal}
               >
                 <span style={{ display: "flex", gap: "5px" }}>
                   Оформить <span>рассрочку</span>
@@ -64,9 +67,7 @@ const Popular = () => {
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
                 className={css.mainCallBtn}
-                onClick={() => {
-                  setIsOpen(true);
-                }}
+                onClick={handleOpenModal}
               >
                 <span style={{ display: "flex", gap: "5px" }}>
                   Оформить <span>рассрочку</span>
@@ -91,9 +92,7 @@ const Popular = () => {
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
                 className={css.mainCallBtn}
-                onClick={() => {
-                  setIsOpen(true);
-                }}
+                onClick={handleOpenModal}
               >
                 <span style={{ display: "flex", gap: "5px" }}>
                   Оформить <span>рассрочку</span>
@@ -113,9 +112,7 @@ const Popular = () => {
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
                 className={css.mainCallBtn}
-                onClick={() => {
-                  setIsOpen(true);
-                }}
+                onClick={handleOpenModal}
               >
                 <span style={{ display: "flex", gap: "5px" }}>
                   Оформить <span>рассрочку</span>
@@ -135,9 +132,7 @@ const Popular = () => {
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
                 className={css.mainCallBtn}
-                onClick={() => {
-                  setIsOpen(true);
-                }}
+                onClick={handleOpenModal}
               >
                 <span style={{ display: "flex", gap: "5px" }}>
                   Оформить <span>рассрочку</span>
@@ -154,9 +149,7 @@ const Popular = () => {
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
                 className={css.mainCallBtn}
-                onClick={() => {
-                  setIsOpen(true);
-                }}
+                onClick={handleOpenModal}
               >
                 <span style={{ display: "flex", gap: "5px" }}>
                   Оформить <span>рассрочку</span>
@@ -176,9 +169,7 @@ const Popular = () => {
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
                 className={css.mainCallBtn}
-                onClick={() => {
-                  setIsOpen(true);
-                }}
+                onClick={handleOpenModal}
               >
                 <span style={{ display: "flex", gap: "5px" }}>
                   Оформить <span>рассрочку</span>
@@ -198,9 +189,7 @@ const Popular = () => {
               <button
                 variants={fadeIn("up", "tween", 0.4, 1)}
                 className={css.mainCallBtn}
-                onClick={() => {
-                  setIsOpen(true);
-                }}
+                onClick={handleOpenModal}
               >
                 <span style={{ display: "flex", gap: "5px" }}>
                   Оформить <span>рассрочку</span>

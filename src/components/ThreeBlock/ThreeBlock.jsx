@@ -7,9 +7,17 @@ import React from "react";
 
 const ThreeBlock = () => {
   const [isOpen, setIsOpen] = React.useState(false);
+
+  const handleOpenModal = () => {
+    setIsOpen(true);
+    document.body.style.overflowY = "hidden";
+  };
+
   return (
     <section className={` ${styles.threeBlockContainer}`}>
-      <h1 className="primaryText">3 простых шага к получению желаемого товара</h1>
+      <h1 className="primaryText">
+        3 простых шага к получению желаемого товара
+      </h1>
       <div className={styles.threeBlockItemsList}>
         <div className={styles.ThreeBlockItem}>
           <span className={styles.threeBlockItemTitle}>
@@ -18,12 +26,7 @@ const ThreeBlock = () => {
           <p className={styles.threeBlockItemDescription}>
             Займет не более 2-х минут
           </p>
-          <button
-            onClick={() => {
-              setIsOpen(true);
-            }}
-            className={styles.mainCallBtn}
-          >
+          <button onClick={handleOpenModal} className={styles.mainCallBtn}>
             Заполните анкету
           </button>
           <img src={icon1} alt="" />
@@ -33,7 +36,7 @@ const ThreeBlock = () => {
             Узнайте решение за 15 минут не выходя из дома
           </span>
           <p className={styles.threeBlockItemDescription}>
-            Наш специалист сразу свяжется с вами <br/>и расскажет решение
+            Наш специалист сразу свяжется с вами <br />и расскажет решение
           </p>
           <img src={icon2} alt="" />
         </div>
